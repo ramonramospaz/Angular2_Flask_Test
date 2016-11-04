@@ -50,14 +50,15 @@ El backend se encuentra en la carpeta ‘backend’ específicamente en el archi
 Para acceder a cada función se debe ir a la ruta https://ramonramospaz.pythonanywhere.com/{{funcion}} donde función se cambia por la lista mostrada anteriormente.
 
 El frontend está conformado por los archivos: index.html, common.css, package.json, Readme.md, systemjs.config.js, tsconfig.json y la carpeta app. Esta contiene los siguientes componentes en typescript:
-1. main.ts: es el archivo principal, donde se definen las rutas y se incluyen los módulos a utilizar en la aplicación.
-2. login.component.ts: contiene el código de la página de acceso de la aplicación.
-3. activities.component.ts: contiene el código de la página principal (y única) de la aplicación donde se listan, se agregan y eliminan las actividades.
-4. router-config.ts: contiene las rutas creadas para la aplicación.
+Markup : 1. main.ts: es el archivo principal, donde se definen las rutas y se incluyen los módulos a utilizar en la aplicación.
+         2. login.component.ts: contiene el código de la página de acceso de la aplicación.
+         3. activities.component.ts: contiene el código de la página principal (y única) de la aplicación donde se listan, se agregan y eliminan las actividades.
+         4. router-config.ts: contiene las rutas creadas para la aplicación.
 
 La base de datos ramonramospaz$test1 se encuentra conformada por 2 tablas:
-1.	Usuario: contiene los usuarios que deben tener acceso a la aplicación. Allí también se almacena el token.
-2.	Actividades: contiene la lista de actividades de cada usuario.
+Markup :
+         1.	Usuario: contiene los usuarios que deben tener acceso a la aplicación. Allí también se almacena el token.
+         2.	Actividades: contiene la lista de actividades de cada usuario.
 
 
 
