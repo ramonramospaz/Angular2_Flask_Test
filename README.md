@@ -42,23 +42,23 @@ Cuando ejecute el comando mostrar lo siguiente por consola.
 El desarrollo está compuesto de 2 secciones, el frontend desarrollado en angular 2 y el backend en python con flask y utilizando MySql como base de datos.
 
 El backend se encuentra en la carpeta ‘backend’ específicamente en el archivo flask_app.py. Este servicio web contiene las siguientes funciones:
-1) Autenticar: Autentica al usuario y devuelve el token para el acceso.
-2) Listar: Muesta las actividades realizadas por el usuario.
-3) Agregar: Permite adicionar las nuevas actividades
-4) Eliminar: Elimina la actividad seleccionada.
+* Autenticar: Autentica al usuario y devuelve el token para el acceso.
+* Listar: Muesta las actividades realizadas por el usuario.
+* Agregar: Permite adicionar las nuevas actividades
+* Eliminar: Elimina la actividad seleccionada.
 
 Para acceder a cada función se debe ir a la ruta https://ramonramospaz.pythonanywhere.com/{{funcion}} donde función se cambia por la lista mostrada anteriormente.
 
 El frontend está conformado por los archivos: index.html, common.css, package.json, Readme.md, systemjs.config.js, tsconfig.json y la carpeta app. Esta contiene los siguientes componentes en typescript:
-Markup : 1. Main.ts: es el archivo principal, donde se definen las rutas y se incluyen los módulos a utilizar en la aplicación.
-         2. Login.component.ts: contiene el código de la página de acceso de la aplicación.
-         3. Activities.component.ts: contiene el código de la página principal (y única) de la aplicación donde se listan, se agregan y eliminan las actividades.
-         4. Router-config.ts: contiene las rutas creadas para la aplicación.
+* Main.ts: es el archivo principal, donde se definen las rutas y se incluyen los módulos a utilizar en la aplicación.
+* Login.component.ts: contiene el código de la página de acceso de la aplicación.
+* Activities.component.ts: contiene el código de la página principal (y única) de la aplicación donde se listan, se agregan y eliminan las actividades.
+* Router-config.ts: contiene las rutas creadas para la aplicación.
 
 La base de datos ramonramospaz$test1 se encuentra conformada por 2 tablas:
 Markup :
-         1. Usuario: contiene los usuarios que deben tener acceso a la aplicación. Allí también se almacena el token.
-         2. Actividades: contiene la lista de actividades de cada usuario.
+*  Usuario: contiene los usuarios que deben tener acceso a la aplicación. Allí también se almacena el token.
+*  Actividades: contiene la lista de actividades de cada usuario.
 
 
 
