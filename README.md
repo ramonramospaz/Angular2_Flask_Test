@@ -1,25 +1,26 @@
-# Aplicación de prueba con Angular 2 para frontend y flask+python para backend.
 
-# pre-requisitos de instalación
+# Test application with Angular 2 for frontend and flask + python for backend.
 
-Es necesario tener instalado Node 6 en tu máquina, ya que el frontend no lo he subido a un servidor. 
-El backend se encuentra hospedado en la ruta https://ramonramospaz.pythonanywhere.com/. El usuario de prueba 'test' y la clave es 123456. La ruta con el código fuente se encuentra en https://github.com/ramonramospaz/Angular2_Flask_Test.
+# pre-installation requirements
 
-# Instrucciones para instalación.
+It is necessary to have Node 6 installed on your machine, since the frontend has not been uploaded to a server.
+The backend is hosted on the route https://ramonramospaz.pythonanywhere.com/. The test user 'test' and the password is 123456. The route with the source code can be found at https://github.com/ramonramospaz/Angular2_Flask_Test.
 
-Primero clone o descargue como un Zip usando el botón "Clone Or Download" que se encuentra en la parte superior derecha de la página web.
+# Installation instructions.
 
-Ahora en la línea de comando, posicionado en la carpeta principal se ejecuta la siguiente rutina:
+First clone or download as a Zip using the "Clone Or Download" button located at the top right of the web page.
+
+Now on the command line, positioned in the main folder, the following routine is executed:
 
     npm install
     
-# Arrancando el servidor de prueba
+# Booting the test server
 
-Para arrancar el servidor de prueba se ejecuta la siguiente sentencia.
+To start the test server, the following statement is executed.
 
-	npm start
+npm start
 
-Cuando ejecute el comando mostrar lo siguiente por consola.
+When you run the command, show the following by console.
 
 ```
 ** browser-sync config **
@@ -37,29 +38,29 @@ Cuando ejecute el comando mostrar lo siguiente por consola.
  -----------------------------------
 ```
 
-#Detalle del desarrollo
+# Development detail
 
-El desarrollo está compuesto de 2 secciones, el frontend desarrollado en angular 2 y el backend en python con flask y utilizando MySql como base de datos.
+The are 2 sections, the frontend developed in angular 2 and the backend in python with flask and using MySql as a database.
 
-El backend se encuentra en la carpeta ‘backend’ específicamente en el archivo flask_app.py. Este servicio web contiene las siguientes funciones:
-* Autenticar: Autentica al usuario y devuelve el token para el acceso.
-* Listar: Muesta las actividades realizadas por el usuario.
-* Agregar: Permite adicionar las nuevas actividades
-* Eliminar: Elimina la actividad seleccionada.
+The backend is in the 'backend' folder specifically in the file flask_app.py. This web service contains the following functions:
+* Authenticate: Authenticates the user and returns the token for access.
+* List: It shows the activities carried out by the user.
+* Add: Allows adding new activities
+* Delete: Delete the selected activity.
 
-Para acceder a cada función se debe ir a la ruta https://ramonramospaz.pythonanywhere.com/{{funcion}} donde función se cambia por la lista mostrada anteriormente.
+To access each function you must go to the path https://ramonramospaz.pythonanywhere.com/{{function}} where function is changed by the list shown above.
 
-El frontend está conformado por los archivos: index.html, common.css, package.json, Readme.md, systemjs.config.js, tsconfig.json y la carpeta app. Esta contiene los siguientes componentes en typescript:
-* Main.ts: es el archivo principal, donde se definen las rutas y se incluyen los módulos a utilizar en la aplicación.
-* Login.component.ts: contiene el código de la página de acceso de la aplicación.
-* Activities.component.ts: contiene el código de la página principal (y única) de la aplicación donde se listan, se agregan y eliminan las actividades.
-* Router-config.ts: contiene las rutas creadas para la aplicación.
+The files of the frontEnd are: index.html, common.css, package.json, Readme.md, systemjs.config.js, tsconfig.json and the app folder. 
+It contains the following components in typescript:
+* Main.ts: it is the main file, where the routes are defined and the modules to be used in the application are included.
+* Login.component.ts: contains the code of the access page of the application.
+* Activities.component.ts: contains the code of the main (and only) page of the application where the activities are listed, added and deleted.
+* Router-config.ts: contains the routes created for the application.
 
-La base de datos ramonramospaz$test1 se encuentra conformada por 2 tablas:
-Markup :
-*  Usuario: contiene los usuarios que deben tener acceso a la aplicación. Allí también se almacena el token.
-*  Actividades: contiene la lista de actividades de cada usuario.
-
+The database ramonramospaz $ test1 have 2 tables:
+Markup:
+* User: contains the users who must have access to the application. The token is also stored there.
+* Activities: contains the list of activities for each user.
 
 
 
